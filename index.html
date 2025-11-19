@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Visitor Tracking Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f8fb;
+            text-align: center;
+            color: #333;
+        }
+        .header {
+            background: #0070d2;
+            padding: 25px;
+            color: white;
+        }
+        .container {
+            margin-top: 40px;
+            padding: 20px;
+            max-width: 650px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+            padding: 15px 25px;
+            background: #0070d2;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #005fb0;
+        }
+        .note {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+
+    <!-- Pardot Tracking Code -->
+    <script type='text/javascript'>
+        piAId = '1106653';
+        piCId = '444113';
+        piHostname = 'go.demo.pardot.com';
+
+        (function() {
+            function async_load(){
+                var s = document.createElement('script'); 
+                s.type = 'text/javascript';
+                s.src = (document.location.protocol === 'https:' ? 'https://' : 'http://') 
+                        + piHostname + '/pd.js';
+                var c = document.getElementsByTagName('script')[0]; 
+                c.parentNode.insertBefore(s, c);
+            }
+            if(window.attachEvent) { window.attachEvent('onload', async_load); }
+            else { window.addEventListener('load', async_load, false); }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Account Engagement Visitor Tracking</h1>
+    </div>
+
+    <div class="container">
+        <h2>Tracking is Active 🎉</h2>
+        <p>
+            This webpage is connected to Salesforce Account Engagement.<br>
+            When you open this page, a new *Visitor* is recorded.
+        </p>
+
+
+        <p class="note">
+            Go to: <strong>Account Engagement → Prospects → Visitors</strong><br>
+            You will see your visit as an anonymous visitor.
+        </p>
+    </div>
+
+</body>
+</html>
