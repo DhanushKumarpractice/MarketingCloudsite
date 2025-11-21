@@ -29,17 +29,26 @@
             margin-right: auto;
         }
         button {
-            padding: 15px 25px;
+            padding: 15px 35px;
             background: #0070d2;
             border: none;
             border-radius: 5px;
             color: white;
             cursor: pointer;
-            font-size: 12px;
+            font-size: 16px;
             margin-top: 20px;
         }
         button:hover {
             background: #005fb0;
+        }
+        .small-link {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .small-link a {
+            color: #0070d2;
+            text-decoration: underline;
+            cursor: pointer;
         }
     </style>
 
@@ -77,15 +86,18 @@
             When you open this page, a new <b>Visitor</b> is recorded.
         </p>
 
-        <!-- Button: Request Free Trial -->
+        <!-- Main Button: Request Free Trial -->
         <a href="https://go.demo.pardot.com/l/1105653/2025-11-20/4ynjn2" target="_blank">
             <button>Request Free Trial</button>
         </a>
 
-        <!-- Button: Contact Us Page -->
-        <a href="https://go.demo.pardot.com/l/1105653/2025-11-13/4ynjlr" target="_blank">
-            <button>Contact us Page</button>
-        </a>
+        <!-- Small Text Link: Contact Us -->
+        <div class="small-link">
+            <a href="https://go.demo.pardot.com/l/1105653/2025-11-13/4ynjlr" target="_blank">
+                Contact us Page
+            </a>
+        </div>
+
     </div>
 
 </body>
